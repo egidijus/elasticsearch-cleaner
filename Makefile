@@ -12,6 +12,9 @@ $(directory):
 	@echo "Folder $(directory) does not exist"
 	virtualenv --no-site-packages -p python3 $@
 
+drop_index:
+	curl -X DELETE "localhost:9200/potato*"
+
 run:
 	source ./venv/bin/activate; \
 	python main.py
