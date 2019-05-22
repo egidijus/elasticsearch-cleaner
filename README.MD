@@ -22,7 +22,7 @@ elasticsearch and logstash
 (we are only interested in elasticsearch and kibana for looking at what happens to our indexes).
 The below command will run a container in the foreground, you will need to open another terminal window to proceed.
 ```
-docker run -it --rm -p 5601:5601 -p 9200:9200 -p 9300:9300 -p 5601:5601 -e LOGSTASH_START=nope sebp/elk:es241_l240_k461
+docker run -it --rm -p 5601:5601 -p 9200:9200 -p 9300:9300 -e LOGSTASH_START=nope sebp/elk:es241_l240_k461
 ```
 
 
